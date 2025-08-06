@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Parvez Khan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card h3 {
+            color: #667eea;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Parvez Khan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Technical Excellence</h1>
+                <p class="page-subtitle">
+                    Comprehensive expertise across the full ML engineering stack, from leadership to implementation
+                </p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-users">Leadership & Strategy</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Technical Architecture</span>
+                            <span class="skill-tag">ML Product Strategy</span>
+                            <span class="skill-tag">Stakeholder Management</span>
+                            <span class="skill-tag">AI Governance</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-zap">ML Engineering</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MLOps</span>
+                            <span class="skill-tag">Model Deployment</span>
+                            <span class="skill-tag">Distributed Training/Serving</span>
+                            <span class="skill-tag">Feature Engineering</span>
+                            <span class="skill-tag">Model Monitoring</span>
+                            <span class="skill-tag">A/B Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-code">Programming & Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python (Expert)</span>
+                            <span class="skill-tag">Java (Beginner)</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">H2O.ai</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-brain">Generative AI/NLP</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">RAG Systems</span>
+                            <span class="skill-tag">Vector Databases</span>
+                            <span class="skill-tag">Transformers</span>
+                            <span class="skill-tag">On-Prem LLM Serving</span>
+                            <span class="skill-tag">AI Agents</span>
+                            <span class="skill-tag">Prompt Engineering</span>
+                            <span class="skill-tag">LangChain</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-cloud">Cloud & Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Azure</span>
+                            <span class="skill-tag">Databricks</span>
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">SnowPark</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Azure Functions</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <h3 class="icon-database">Big Data & Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PySpark</span>
+                            <span class="skill-tag">Ray</span>
+                            <span class="skill-tag">NVIDIA Rapids</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">FastAPI</span>
+                            <span class="skill-tag">Streamlit</span>
+                            <span class="skill-tag">Plotly</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="experience.html" class="btn btn-primary">
+                        View My Experience →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Parvez Khan. Technical excellence in ML engineering.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

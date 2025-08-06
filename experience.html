@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Parvez Khan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            margin-left: 60px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -45px;
+            top: 20px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 4px solid white;
+            box-shadow: 0 0 0 4px #667eea;
+        }
+
+        .timeline-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .timeline-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .timeline-date {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .timeline-company {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin: 0.5rem 0;
+        }
+
+        .timeline-role {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        .achievements {
+            list-style: none;
+        }
+
+        .achievements li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .achievements li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #38a169;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .timeline {
+                margin-left: 0;
+            }
+
+            .timeline::before {
+                left: 15px;
+            }
+
+            .timeline-item {
+                margin-left: 45px;
+            }
+
+            .timeline-item::before {
+                left: -30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Parvez Khan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html" class="active">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Professional Journey</h1>
+                <p class="page-subtitle">
+                    10+ years of experience building and scaling ML systems from research to production
+                </p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-card">
+                            <div class="timeline-date">2021 - Present</div>
+                            <div class="timeline-company">Current Organization</div>
+                            <div class="timeline-role">Engineering Manager - Machine Learning</div>
+                            <p style="font-style: italic; margin-bottom: 1rem; color: #666;">
+                                Leading enterprise AI transformation across multiple roles: Engineering Manager, Lead ML Engineer, and Data Science SRE
+                            </p>
+                            <ul class="achievements">
+                                <li>Built enterprise AI Workbench serving 1000+ users with 99.9% uptime</li>
+                                <li>Architected AI governance framework reducing harmful outputs by 95%</li>
+                                <li>Pioneered GPU acceleration with NVIDIA A100s achieving 10x training speedup</li>
+                                <li>Delivered Settlement Predictor preventing $2M+ annual losses</li>
+                                <li>Led document translation initiative processing 100K+ documents monthly</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-card">
+                            <div class="timeline-date">2018 - 2021</div>
+                            <div class="timeline-company">Previous Organization</div>
+                            <div class="timeline-role">Senior ML Engineer</div>
+                            <p style="font-style: italic; margin-bottom: 1rem; color: #666;">
+                                Delivered innovative NLP solutions for healthcare and manufacturing domains
+                            </p>
+                            <ul class="achievements">
+                                <li>Engineered HIPAA-compliant EMR de-identification system with >96% accuracy</li>
+                                <li>Developed automatic order interpretation for metal industry with 94% accuracy</li>
+                                <li>Pioneered hybrid ML approaches combining rule-based and deep learning models</li>
+                                <li>Reduced manual quote generation time by 80% through AI automation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-card">
+                            <div class="timeline-date">2015 - 2018</div>
+                            <div class="timeline-company">Early Career</div>
+                            <div class="timeline-role">ML Engineer & Data Scientist</div>
+                            <p style="font-style: italic; margin-bottom: 1rem; color: #666;">
+                                Built foundation in machine learning, NLP, and data science across various projects
+                            </p>
+                            <ul class="achievements">
+                                <li>Developed expertise in Python, ML frameworks, and cloud technologies</li>
+                                <li>Worked on classification, regression, and clustering problems</li>
+                                <li>Gained experience in data engineering and model deployment</li>
+                                <li>Built portfolio of successful ML applications across industries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="projects.html" class="btn btn-primary">
+                        View My Projects →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Parvez Khan. A decade of ML engineering excellence.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

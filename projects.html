@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Parvez Khan</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 2rem;
+        }
+
+        .project-header h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-subtitle {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .project-body {
+            padding: 2rem;
+        }
+
+        .project-description {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .project-impact {
+            background: #f0fff4;
+            border-left: 4px solid #38a169;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .project-impact strong {
+            color: #38a169;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="index.html" class="logo">Parvez Khan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Featured Projects</h1>
+                <p class="page-subtitle">
+                    Showcasing impactful ML solutions that drive business value and innovation
+                </p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Enterprise AI Governance Platform</h3>
+                            <p class="project-subtitle">ML Safety & Compliance Framework</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Architected comprehensive AI governance system for evaluating chatbots and agents,
+                                ensuring responsible AI deployment across enterprise.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> 95% reduction in harmful output incidents, enabling safe AI adoption company-wide
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MLFlow</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">AI Safety</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Data Science Workbench</h3>
+                            <p class="project-subtitle">Scalable ML Platform for 1000+ Users</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Built enterprise-grade AI workbench with integrated data catalog, model catalog,
+                                and feature store, supporting 200+ active ML projects.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> 99.9% uptime, 60% reduction in time-to-production,
+                                adopted by entire data science organization
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">JupyterHub</span>
+                                <span class="tech-tag">H2O.ai</span>
+                                <span class="tech-tag">Driverless AI</span>
+                                <span class="tech-tag">Feast</span>
+                                <span class="tech-tag">Ray</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Settlement Predictor System</h3>
+                            <p class="project-subtitle">Cross-Border Currency Optimization</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Built ML-powered currency demand prediction system for cross-border transactions,
+                                optimizing inventory management and reducing foreign exchange losses.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> $2M+ annual loss prevention through accurate demand forecasting
+                                and automated currency purchasing decisions
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">H2O.ai</span>
+                                <span class="tech-tag">PySpark</span>
+                                <span class="tech-tag">Azure</span>
+                                <span class="tech-tag">Time Series</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Document Translation Platform</h3>
+                            <p class="project-subtitle">Generative AI for Payment Domain</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Leading development of multi-language document translation service using RAG architecture
+                                and fine-tuned LLMs for financial terminology accuracy.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> 100K+ documents processed monthly with 95% accuracy improvement
+                                over legacy translation systems
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">Vector DB</span>
+                                <span class="tech-tag">OpenAI</span>
+                                <span class="tech-tag">GenAI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>EMR De-identification System</h3>
+                            <p class="project-subtitle">Healthcare AI for HIPAA Compliance</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Engineered hybrid AI solution combining pattern matching, deep learning NER models,
+                                and knowledge bases to remove PHI from oncology documents.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> >96% accuracy in PHI removal, enabling secure medical data
+                                sharing for research and analytics
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">SpaCy</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">NLP</span>
+                                <span class="tech-tag">HIPAA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3>Automatic Order Interpretation</h3>
+                            <p class="project-subtitle">Manufacturing AI for Metal Industry</p>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Developed hybrid NER model combining rule-based systems and deep learning to automatically
+                                extract order attributes and generate quotes for metal products.
+                            </p>
+                            <div class="project-impact">
+                                <strong>Impact:</strong> 80% reduction in manual quote generation time with 94% accuracy
+                                in attribute extraction
+                            </div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">NER</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Rule Engine</span>
+                                <span class="tech-tag">Manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 4rem;">
+                    <a href="contact.html" class="btn btn-primary">
+                        Let's Discuss Your Next Project →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Parvez Khan. Building the future with AI innovation.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
